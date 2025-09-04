@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylesheet 1</title>
+    <style>
+
+        body{
+            margin: 30px;
+        }
+
+        #header{
+            background-color: #07aa6b;
+            color: white;
+            border-radius: 5px;
+            padding-left: 15px;
+            padding-bottom: 10px;
+        }
+        
+        .header-contents{
+            margin: 0px;
+        }
+
+        #main-container{
+            display: flex;
+            margin-top: 10px;
+        }
+
+        #menu{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 23%;
+        }
+
+        #menu p{
+            background-color: #f1f1f1;  
+            border-radius: 5px;
+            margin: 0px;
+            margin-bottom: 5px;
+            padding: 3px;
+            border: #cbd8d2;
+            border-style: solid;
+        }
+
+        #menu p#current-page{
+            background-color: #07aa6b;
+            color:white;
+        }
+
+        #main-content{
+            padding: 20px;
+        }
+
+        #main-content h1{
+            margin-top: 0px;
+        }
+
+        #main-content p{
+            margin: 0px;
+        }
+
+        #side-bar{
+            background-color: #2da4e7;
+            color: white;
+            border-radius: 7px;
+            padding-left: 10px;
+            width: 350px;
+
+        }
+
+        
+
+        #footer{
+            background-color: #f1f1f1;
+            margin-top: 10px;
+            border-radius: 13px;
+            font-size: small;
+            text-align: center;
+            border: 10cm;
+            border-color: black;
+            padding: 10px;
+        }
+        
+        #footer p{
+            margin: 0px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 class = "header-contents">Welcome to My Homepage</h1>
+        <p class = "header-contents">Use the menu to select different Stylesheets</p>
+    </div>
+
+    <div id="main-container">
+        <div id = "menu">
+            <p id = "current-page">Stylesheet 1</p>
+            <p>Stylesheet 2</p>
+            <p>No Stylesheet</p>
+        </div>
+
+        <div id = "main-content">
+        <h1>Same Page Different Stylesheets</h1>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change
+            the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following
+            links:</p>
+        <a href="style1.html">Stylesheet1,</a> <a>Stylesheet2.</a>
+
+        <h2>No Styles</h2>
+        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks
+        like with no stylesheet:</p>
+        <a href="nostyle.html">No Stylesheet.</a>
+        </div>
+
+        <div id = "side-bar">
+            <h3>Side-Bar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+        <P>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+        vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+        iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</P>
+    </div>
+</body>
+
+</html>
