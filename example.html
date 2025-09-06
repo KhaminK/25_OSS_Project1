@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <style>
+        body {
+            background-color: #1a2023;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        hr{
+            margin-bottom: 30px;
+        }
+
+        a{
+            color: #7ca0dc;
+        }
+
+        #columns-icons,
+        #hanging-icons,
+        #custom-cards,
+        #icon-grid,
+        #features-title {
+            display: block;
+            background-color: #20252b;
+            margin: 0px;
+            margin-bottom: 50px;
+            padding: 50px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .flex-box {
+            display: flex;
+            gap: 30px;
+        }
+
+        .icon-big {
+            width: 85px;
+        }
+
+        #hanging-icons img{
+            width: 50px;
+            height: 50px;
+            position:relative;
+            top: 25px;
+        }
+
+        .my-button {
+            display: inline-block;     
+            text-decoration: none;    
+            text-align: center;        
+            line-height: 40px;
+            background-color: #0b6efd;
+            color: white;
+            border-radius: 5px;
+            border-style: none;
+            height: 40px;
+            width: 130px;
+            cursor: pointer;
+        }
+
+        #background-image1,
+        #background-image2,
+        #background-image3 {
+            background-image: url("설윤1.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 380px;
+            width: 380px;
+            padding-right: 20px;
+            padding-left: 20px;
+            border-radius: 15px;
+        }
+
+        .image-words {
+            height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .image-contents {
+            display: flex;
+            position: relative;
+            bottom: 120px;
+        }
+
+        .image-contents img {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 10px;
+        }
+
+        .push-left {
+            margin-left: auto;
+        }
+
+        #icon-grid img {
+            width: 50px;
+            height: 50px;
+        }
+
+        #icon-grid h2 {
+            margin: 5px;
+        }
+
+        #icon-grid p {
+            margin: 0px;
+        }
+
+        #line1,
+        #line2 {
+            display: flex;
+        }
+
+        #line1{
+            margin-bottom: 30px;
+        }
+
+        #line2 {
+            margin-bottom: 50px;
+        }
+
+        #left-content{
+            flex-basis: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #left-content h1{
+            margin: 0px;
+        }
+
+        .line{
+            display: flex;
+        }
+
+        .line img{
+            width: 60px;
+            position: relative;
+            top: 30px;
+            right: 10px;
+        }
+
+        .line h1{
+            margin: 0px;
+        }
+
+        .line p{
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="columns-icons">
+        <h1>Columns with icons</h1>
+        <hr>
+        <div class="flex-box">
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+                <h2>Featured-title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                    We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="index.html">Back to index ></a>
+            </div>
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+                <h2>Featured-title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                    We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="index.html">Back to index ></a>
+            </div>
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+                <h2>Featured-title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                    We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="index.html">Back to index ></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="hanging-icons">
+        <h1>Hanging icons</h1>
+        <hr>
+        <div class="flex-box">
+            <div class="column">
+                <img src="icon.png" alt="icon">
+            </div>
+
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                    We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="my-button">Primary button</a>
+
+            </div>
+
+            <div class="column">
+                <img src="icon.png" alt="icon">
+            </div>
+
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                    We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="my-button">Primary button</a>
+            </div>
+
+            <div class="column">
+                <img src="icon.png" alt="icon">
+            </div>
+
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                    We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="my-button">Primary button</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="custom-cards">
+        <h1>Custom cards</h1>
+        <hr>
+        <div class="flex-box">
+            <div id="background-image1">
+                <h1 class="image-words">Short title, long jacket</h1>
+                <div class="image-contents">
+                    <img src="icon.png" alt="icon-xsmall">
+                    <img src="icon.png" alt="icon-xsmall" class="push-left">
+                    <p>Earth</p>
+                    <img src="icon.png" alt="icon-xsmall">
+                    <p>3d</p>
+                </div>
+            </div>
+            <div id="background-image2">
+                <h1 class="image-words">Much longer title that wraps to multiple lines</h1>
+                <div class="image-contents">
+                    <img src="icon.png" alt="icon-xsmall">
+                    <img src="icon.png" alt="icon-xsmall" class="push-left">
+                    <p>Earth</p>
+                    <img src="icon.png" alt="icon-xsmall">
+                    <p>3d</p>
+                </div>
+            </div>
+            <div id="background-image3">
+                <h1 class="image-words">Another longer title belongs here</h1>
+                <div class="image-contents">
+                    <img src="icon.png" alt="icon-xsmall">
+                    <img src="icon.png" alt="icon-xsmall" class="push-left">
+                    <p>Earth</p>
+                    <img src="icon.png" alt="icon-xsmall">
+                    <p>3d</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <div id="icon-grid">
+        <h1>Icon grid</h1>
+        <hr>
+        <div id="line1">
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+            </div>
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+            </div>
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+            </div>
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+            </div>
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+
+        </div>
+
+        <div id="line2">
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+            </div>
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+            </div>
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+            </div>
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+
+            <div class="column">
+                <img src="icon.png" alt="icon" class="icon-big">
+            </div>
+            <div class="column">
+                <h2>Featured title</h2>
+                <p>Paragraph of text beneath the heading to explain the heading.</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="features-title">
+        <h1>Features with title</h1>
+        <hr>
+        <div class="flex-box">
+            <div id="left-content">
+                <h1>Left-aligned title explaining these awesome features</h1>
+                <p>Paragraph of text beneath the heading to explain the heading.
+                    We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="my-button">Primary button</a>
+            </div>
+
+            <div id="right-content">
+                <div class="line">
+                    <div>
+                        <img src="icon.png" alt="icon">
+                        <h2>Featured-title</h2>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                    <div>
+                        <img src="icon.png" alt="icon">
+                        <h2>Featured-title</h2>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+
+                <div class="line">
+                    <div>
+                        <img src="icon.png" alt="icon">
+                        <h2>Featured-title</h2>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                    <div>
+                        <img src="icon.png" alt="icon">
+                        <h2>Featured-title</h2>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
